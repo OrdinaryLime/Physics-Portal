@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+	border: 2px solid;
+	background-color: lightgoldenrodyellow;
+}
+table{
+	width: 500px;
+	text-align: center;
+	border-collapse: collapse;
+	border: 2px solid;
+	margin: 0px;
+}
+th,td {
+	border: 1px solid;
+	padding: 8px 0px 8px;
+}
+.completed{
+	background-color: green;
+}
+.incomplete{
+	background-color: yellow;
+}
+.overdue{
+	background-color: red;
+}
+h2{
+	margin:0px;
+	padding: 0px;
+}

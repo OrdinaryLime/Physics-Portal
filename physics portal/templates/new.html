@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Admin</title>
+	<link rel='stylesheet' href='/static/style2.css/'>
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="{{ url_for('admin') }}">Students</a></li>
+			<li><a href="{{ url_for('assg') }}">Assignments</a></li>
+			<li><a href="{{ url_for('new') }}">New</a></li>
+			<li><a href="{{ url_for('update') }}">Update</a></li>
+			<li><a href="{{ url_for('notes') }}">Notes</a></li>
+		</ul>
+	</nav>
+	<h1>Add new assignment</h1>
+	<form method="POST">
+			<label for="assg_name">Enter name:</label>
+			<input type="text" name="assg_name" required><br>
+			<label for='due_date'>Enter due date</label>
+			<input type='text' name='due_date'>
+			<input type="submit" value="Add">
+	</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Admin</title>
+	<link rel='stylesheet' href='/static/style2.css/'>
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="{{ url_for('admin') }}">Students</a></li>
+			<li><a href="{{ url_for('assg') }}">Assignments</a></li>
+			<li><a href="{{ url_for('new') }}">New</a></li>
+			<li><a href="{{ url_for('update') }}">Update</a></li>
+			<li><a href="{{ url_for('notes') }}">Notes</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h1>Find assignment</h1>
+		<form method="POST">
+			<label for="assg_name">Enter assignment:</label>
+			<input type="text" name="assg_name" required><br>
+			<select id="status" name="status">
+				<option value='all'>All</option>
+				<option value="completed">Completed</option>
+				<option value="incomplete">Incomplete</option>
+				<option value="Overdue">Overdue</option>
+			</select>
+			<input type="submit" value="Search">
+		</form>
+	</main>
+	<h1>{{ name }}</h1>
+	<table>
+		<tr>
+			<th>Student</th>
+			<th>Status</th>
+		<tr>
+		{% for row in stored %}
+		<tr class="{% if row[1] == 'completed' %}completed{% elif row[1] == 'incomplete' %}incomplete
+		{% elif row[1] == 'overdue' %}overdue{% endif %}">
+			<td>{{ row[0] }}</td>
+			<td>{{ row[1] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	
+</body>
+</html>

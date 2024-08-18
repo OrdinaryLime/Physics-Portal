@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Admin</title>
+	<link rel='stylesheet' href='/static/style2.css/'>
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="{{ url_for('admin') }}">Students</a></li>
+			<li><a href="{{ url_for('assg') }}">Assignments</a></li>
+			<li><a href="{{ url_for('new') }}">New</a></li>
+			<li><a href="{{ url_for('update') }}">Update</a></li>
+			<li><a href="{{ url_for('notes') }}">Notes</a></li>
+		</ul>
+	</nav>
+	<h1>Update assignment</h1>
+	<form method="POST">
+		<label for="assg_name">Enter name of assignment:</label>
+		<input type="text" name="assg_name" required><br>
+		<select id="status" name="status">
+				<option value="completed">Completed</option>
+				<option value="incomplete">Incomplete</option>
+				<option value="Overdue">Overdue</option>
+		</select></br>
+		<label for='stu_list'>Enter students separated by commas</label>
+		<input type='text' name='stu_list'>
+		<input type="submit" value="make changes">
+	</form>
+	<h1>{{ message }}</h1>
+</body>
+</html>

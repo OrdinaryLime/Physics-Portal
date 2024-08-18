@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Student</title>
+	<link rel='stylesheet' href='/static/style3.css/'>
+</head>
+<body>
+	<h1>Welcome {{ name }}</h1>
+	<h2>Assignments</h2>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Due date</th>
+			<th>Status</th>
+		</tr>
+		{% for record in details %}
+		<tr class="{{ record[2] }}">
+			<td>{{ record[0] }}</td>
+			<td>{{ record[1] }}</td>
+			<td>{{ record[2] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<h2>Remarks</h2>
+	<p>{{ remarks }}</p>
+</body>
+</html>

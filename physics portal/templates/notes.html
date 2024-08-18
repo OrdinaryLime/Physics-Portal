@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Admin</title>
+	<link rel='stylesheet' href='/static/style2.css/'>
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="{{ url_for('admin') }}">Students</a></li>
+			<li><a href="{{ url_for('assg') }}">Assignments</a></li>
+			<li><a href="{{ url_for('new') }}">New</a></li>
+			<li><a href="{{ url_for('update') }}">Update</a></li>
+			<li><a href="{{ url_for('notes') }}">Notes</a></li>
+		</ul>
+	</nav>
+	<h1>Select Student</h1>
+	<form action="/admin/notes1" method="POST">
+		<label for='name'>Enter name:</label>
+		<input type='text' name='name'>
+		<input type="submit" value="Search">
+	</form>
+	<p>{{ remarks }}</p>
+	<h1>Update remarks</h1>
+	<form action="/admin/notes2" method="POST">
+		<label for='name'>Enter name:</label>
+		<input type='text' name='name' placeholder="{{ name }}"><br>
+		<input type='textbox' name='remarks' placeholder='Enter remarks here or clear' rows='20' cols='50'>
+		<input type="submit" value="Search">
+		<bu
+	</form>
+	<h1>{{ message }}</h1>
+</body>
+</html>
