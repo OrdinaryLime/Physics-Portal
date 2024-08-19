@@ -26,7 +26,7 @@ def login():
             message = "Username or password is wrong"
             return render_template("login.html", message=message)
         else:
-            return redirect(url_for("student", email=stored[0]))
+            return redirect(url_for("student", email=details[0]))
     return render_template("login.html")
 
 @app.route("/register", methods=["GET", "POST"])
