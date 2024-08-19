@@ -238,9 +238,10 @@ def notes2():
     return render_template("notes.html", message=message, remarks=None)
 
 
-@app.route("/student")
+@app.route("/student", methods=["POST","GET"])
 def student():
     email = request.args.get('email')
+    remarks = None
     # connection closes after with block
     with sqlite3.connect("student.db") as conn:
         cursor = conn.cursor()
@@ -269,10 +270,8 @@ def student():
                 elif row[0] == name:
                     remarks = row[2]
     return render_template('student.html', name=name, details=details, remarks=remarks)
-
+   
 if __name__ == "__main__":
     app.run(debug=True, port=3294)
-
-
 
 
