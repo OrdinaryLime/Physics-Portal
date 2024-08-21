@@ -15,7 +15,7 @@ this program has a function for both admin and students. Admins are able to assi
     <li>Several features in admin page with navigation bar</li>
     <li>Stores and update inforrmation in database and csv file</li>
     <li>Student can keep track on assignments</li>
-    <li>Also, html, css, flask, database and csv were used</li>
+    <li>Python, html, css, flask, database and csv were used</li>
 </ul>
 
 <b> Challenges encountered:
