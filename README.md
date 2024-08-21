@@ -2,7 +2,7 @@
 
 <b>Inspiration:
 <br>
-Struggling with Computing Subject when I just begin learning, I really wanted some easy website that can help
+I collect physics assignments in my class so I wanted to try making it easier to remind people to submit their work
 
 <b>What it does(Description):
 <br>
@@ -36,4 +36,4 @@ I really liked the style of my login page because I put in a lot of effort for t
 </ul>
 
 <b> What's next
-I still have lots of stuff to consider adding into, such as more data into the respective databases and txt file.
+I might add new features in the future like 'Remember me' and 'Forgot password?' but for now, I will be focusing on properly formatting the student and admin page using CSS. 
