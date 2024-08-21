@@ -16,11 +16,12 @@ this program has a function for both admin and students. Admins are able to assi
     <li>Stores and update inforrmation in database and csv file</li>
     <li>Student can keep track on assignments</li>
     <li>Python, html, css, flask, database and csv were used</li>
+    <li>A LOT OF GOOGLING</li>
 </ul>
 
 <b> Challenges encountered:
 <br>
-I frequently encountered errors and connection issues so I had to spend a lot of time debugging and working around these problems. Also, there was a tight deadline I needed to finish by.
+Firstly, I frequently encountered errors and connection issues so I had to spend a lot of time debugging and working around these problems. Secondly, I needed to self-learn certain python functions like sqlite3 because my computing teacher had not taught me yet so that I can include them inside this project. Lastly, I had to balance various commitments and procastination and finish this project quickly because there was a tight deadline.
 
 <b> Accomplishments that I'm proud of:
 <br>
